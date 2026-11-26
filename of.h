@@ -1,10 +1,10 @@
 #pragma once
 #include <cstdint>
 
-inline constexpr const char* kRobloxVersion = "version-f0ea5da9412f4e35";
+inline constexpr const char* kRobloxVersion = "version-2c6fd5e09aaf4cfa";
 
 struct TaskScheduler {
-    inline static constexpr uintptr_t Pointer = 0x8E4D7B8;
+    inline static constexpr uintptr_t Pointer = 0x8DA5D98;
     inline static constexpr uintptr_t JobStart = 0xC8;
     inline static constexpr uintptr_t JobEnd = 0xD0;
     inline static constexpr uintptr_t JobName = 0x18;
@@ -12,7 +12,7 @@ struct TaskScheduler {
 };
 
 struct VisualEngine {
-    inline static constexpr uintptr_t Pointer = 0x8942E38;
+    inline static constexpr uintptr_t Pointer = 0x8896B98;
     inline static constexpr uintptr_t Dimensions = 0xB10;
     inline static constexpr uintptr_t ViewMatrix = 0x1B0;
     inline static constexpr uintptr_t RenderView = 0xC50;
@@ -20,7 +20,7 @@ struct VisualEngine {
 };
 
 struct FakeDataModel {
-    inline static constexpr uintptr_t Pointer = 0x8EB6960;
+    inline static constexpr uintptr_t Pointer = 0x8E16368;
     inline static constexpr uintptr_t RealDataModel = 0x1F8;
 };
 
@@ -38,7 +38,7 @@ struct ScriptContext {
 struct ModuleScript {
     inline static constexpr uintptr_t IsCoreScript = 0x0;
     inline static constexpr uintptr_t GUID = 0xB8;
-    inline static constexpr uintptr_t Hash = 0x348;
+    inline static constexpr uintptr_t Hash = 0x0;
     inline static constexpr uintptr_t ByteCode = 0x0;
 };
 
@@ -62,7 +62,7 @@ struct Instance {
     inline static constexpr uintptr_t Parent = 0x60;
     inline static constexpr uintptr_t ClassDescriptor = 0x18;
     inline static constexpr uintptr_t ClassName = 0x8;
-    inline static constexpr uintptr_t ClassBase = 0x1B0;
+    inline static constexpr uintptr_t ClassBase = 0x1B8;
 };
 
 struct Misc {
@@ -72,25 +72,29 @@ struct Misc {
     inline static constexpr uintptr_t AnimationId = 0xA8;
 };
 
+struct HandleAdornment {
+    inline static constexpr uintptr_t CFrame = 0x100;
+};
+
 struct DataModel {
-    inline static constexpr uintptr_t PlaceId = 0x180;
-    inline static constexpr uintptr_t GameId = 0x178;
-    inline static constexpr uintptr_t CreatorId = 0x170;
-    inline static constexpr uintptr_t GameLoaded = 0x588;
+    inline static constexpr uintptr_t PlaceId = 0x1A0;
+    inline static constexpr uintptr_t GameId = 0x198;
+    inline static constexpr uintptr_t CreatorId = 0x190;
+    inline static constexpr uintptr_t GameLoaded = 0x5B8;
     inline static constexpr uintptr_t JobId = 0x108;
-    inline static constexpr uintptr_t Workspace = 0x148;
+    inline static constexpr uintptr_t Workspace = 0x168;
     inline static constexpr uintptr_t ScriptContext = 0x440;
-    inline static constexpr uintptr_t PlaceVersion = 0x19C;
-    inline static constexpr uintptr_t ServerIP = 0x570;
-    inline static constexpr uintptr_t ToRenderView1 = 0x1B8;
+    inline static constexpr uintptr_t PlaceVersion = 0x1BC;
+    inline static constexpr uintptr_t ServerIP = 0x5A0;
+    inline static constexpr uintptr_t ToRenderView1 = 0x1D8;
     inline static constexpr uintptr_t ToRenderView2 = 0x8;
     inline static constexpr uintptr_t ToRenderView3 = 0x28;
-    inline static constexpr uintptr_t PrimitiveCount = 0x410;
+    inline static constexpr uintptr_t PrimitiveCount = 0x430;
 };
 
 struct RunService {
-    inline static constexpr uintptr_t HeartbeatTask = 0x14B80;
-    inline static constexpr uintptr_t HeartbeatFPS = 0xF2;
+    inline static constexpr uintptr_t HeartbeatTask = 0x28E38;
+    inline static constexpr uintptr_t HeartbeatFPS = 0xBE;
 };
 
 struct RenderJob {
@@ -101,7 +105,7 @@ struct RenderJob {
 
 struct Workspace {
     inline static constexpr uintptr_t World = 0x3F8;
-    inline static constexpr uintptr_t ReadOnlyGravity = 0x9D0;
+    inline static constexpr uintptr_t ReadOnlyGravity = 0x9C8;
     inline static constexpr uintptr_t DistributedGameTime = 0x4C0;
     inline static constexpr uintptr_t CurrentCamera = 0x4A0;
 };
@@ -155,17 +159,17 @@ struct MaterialColors {
 
 struct Sound {
     inline static constexpr uintptr_t SoundId = 0xB0;
-    inline static constexpr uintptr_t RollOffMaxDistance = 0x110;
-    inline static constexpr uintptr_t RollOffMinDistance = 0x114;
-    inline static constexpr uintptr_t PlaybackSpeed = 0x10C;
-    inline static constexpr uintptr_t Volume = 0x120;
+    inline static constexpr uintptr_t RollOffMaxDistance = 0x100;
+    inline static constexpr uintptr_t RollOffMinDistance = 0x104;
+    inline static constexpr uintptr_t PlaybackSpeed = 0xFC;
+    inline static constexpr uintptr_t Volume = 0x110;
     inline static constexpr uintptr_t SoundGroup = 0xD0;
-    inline static constexpr uintptr_t IsPlaying = 0x130;
-    inline static constexpr uintptr_t Looped = 0x12D;
+    inline static constexpr uintptr_t IsPlaying = 0x118;
+    inline static constexpr uintptr_t Looped = 0x115;
 };
 
 struct SpawnLocation {
-    inline static constexpr uintptr_t AllowTeamChangeOnTouch = 0x3D;
+    inline static constexpr uintptr_t AllowTeamChangeOnTouch = 0x1D8;
     inline static constexpr uintptr_t Enabled = 0x1D9;
     inline static constexpr uintptr_t Neutral = 0x1DA;
     inline static constexpr uintptr_t ForcefieldDuration = 0x1D0;
@@ -232,7 +236,7 @@ struct Player {
     inline static constexpr uintptr_t MinZoomDistance = 0x374;
     inline static constexpr uintptr_t MaxZoomDistance = 0x370;
     inline static constexpr uintptr_t CameraMode = 0x378;
-    inline static constexpr uintptr_t Mouse = 0x11F0;
+    inline static constexpr uintptr_t Mouse = 0x1278;
 };
 
 struct Team {
@@ -241,35 +245,35 @@ struct Team {
 
 struct Humanoid {
     inline static constexpr uintptr_t Health = 0x184;
-    inline static constexpr uintptr_t MaxHealth = 0x19C;
-    inline static constexpr uintptr_t Walkspeed = 0x1C4;
+    inline static constexpr uintptr_t MaxHealth = 0x1A0;
+    inline static constexpr uintptr_t Walkspeed = 0x1C8;
     inline static constexpr uintptr_t WalkspeedCheck = 0x39C;
-    inline static constexpr uintptr_t JumpPower = 0x198;
-    inline static constexpr uintptr_t JumpHeight = 0x194;
+    inline static constexpr uintptr_t JumpPower = 0x19C;
+    inline static constexpr uintptr_t JumpHeight = 0x198;
     inline static constexpr uintptr_t HipHeight = 0x188;
-    inline static constexpr uintptr_t MaxSlopeAngle = 0x1A0;
+    inline static constexpr uintptr_t MaxSlopeAngle = 0x1A4;
     inline static constexpr uintptr_t SeatPart = 0xF0;
     inline static constexpr uintptr_t HumanoidRootPart = 0x460;
     inline static constexpr uintptr_t CameraOffset = 0x110;
     inline static constexpr uintptr_t HealthDisplayDistance = 0x17C;
-    inline static constexpr uintptr_t NameDisplayDistance = 0x1A4;
+    inline static constexpr uintptr_t NameDisplayDistance = 0x1A8;
     inline static constexpr uintptr_t DisplayDistanceType = 0x174;
     inline static constexpr uintptr_t HealthDisplayType = 0x180;
-    inline static constexpr uintptr_t NameOcclusion = 0x1A8;
+    inline static constexpr uintptr_t NameOcclusion = 0x1AC;
     inline static constexpr uintptr_t DisplayName = 0xA0;
     inline static constexpr uintptr_t MoveDirection = 0x134;
-    inline static constexpr uintptr_t RigType = 0x1B4;
-    inline static constexpr uintptr_t Jump = 0x1D0;
-    inline static constexpr uintptr_t Sit = 0x1D3;
-    inline static constexpr uintptr_t PlatformStand = 0x1D2;
-    inline static constexpr uintptr_t UseJumpPower = 0x1D6;
-    inline static constexpr uintptr_t AutomaticScalingEnabled = 0x95;
-    inline static constexpr uintptr_t BreakJointsOnDeath = 0x1CC;
-    inline static constexpr uintptr_t EvaluateStateMachine = 0x1CD;
-    inline static constexpr uintptr_t RequiresNeck = 0x1D3;
-    inline static constexpr uintptr_t AutoJumpEnabled = 0x1C8;
-    inline static constexpr uintptr_t AutoRotate = 0x1C9;
-    inline static constexpr uintptr_t IsWalking = 0xA2E;
+    inline static constexpr uintptr_t RigType = 0x1B8;
+    inline static constexpr uintptr_t Jump = 0x1D4;
+    inline static constexpr uintptr_t Sit = 0x1D6;
+    inline static constexpr uintptr_t PlatformStand = 0x1D5;
+    inline static constexpr uintptr_t UseJumpPower = 0x1D9;
+    inline static constexpr uintptr_t AutomaticScalingEnabled = 0x1CE;
+    inline static constexpr uintptr_t BreakJointsOnDeath = 0x1D0;
+    inline static constexpr uintptr_t EvaluateStateMachine = 0x1D1;
+    inline static constexpr uintptr_t RequiresNeck = 0x1D6;
+    inline static constexpr uintptr_t AutoJumpEnabled = 0x1CC;
+    inline static constexpr uintptr_t AutoRotate = 0x1CD;
+    inline static constexpr uintptr_t IsWalking = 0xA3E;
     inline static constexpr uintptr_t MoveToPoint = 0x158;
     inline static constexpr uintptr_t MoveToPart = 0x100;
     inline static constexpr uintptr_t WalkTimer = 0x0;
@@ -293,15 +297,15 @@ struct VehicleSeat {
 };
 
 struct StatsItem {
-    inline static constexpr uintptr_t Value = 0x30E0;
+    inline static constexpr uintptr_t Value = 0xB93D;
 };
 
 struct Tool {
     inline static constexpr uintptr_t Tooltip = 0x450;
     inline static constexpr uintptr_t TextureId = 0x348;
     inline static constexpr uintptr_t Grip = 0x494;
-    inline static constexpr uintptr_t Enabled = 0x95;
-    inline static constexpr uintptr_t CanBeDropped = 0x365;
+    inline static constexpr uintptr_t Enabled = 0x4A1;
+    inline static constexpr uintptr_t CanBeDropped = 0x4A0;
     inline static constexpr uintptr_t ManualActivationOnly = 0x4A2;
     inline static constexpr uintptr_t RequiresHandle = 0x4A3;
 };
@@ -343,11 +347,11 @@ struct BasePart {
 struct Primitive {
     inline static constexpr uintptr_t Position = 0xD4;
     inline static constexpr uintptr_t Validate = 0x6;
-    inline static constexpr uintptr_t Owner = 0x218;
+    inline static constexpr uintptr_t Owner = 0x220;
     inline static constexpr uintptr_t Size = 0x1C4;
     inline static constexpr uintptr_t Rotation = 0xB0;
     inline static constexpr uintptr_t Flags = 0x1BE;
-    inline static constexpr uintptr_t Material = 0x0;
+    inline static constexpr uintptr_t Material = 0x256;
     inline static constexpr uintptr_t AssemblyLinearVelocity = 0xE0;
     inline static constexpr uintptr_t AssemblyAngularVelocity = 0xEC;
 };
@@ -362,6 +366,7 @@ struct PrimitiveFlags {
 struct MeshPart {
     inline static constexpr uintptr_t MeshId = 0x2F8;
     inline static constexpr uintptr_t Texture = 0x328;
+    inline static constexpr uintptr_t MeshSize = 0x210;
 };
 
 struct Model {
@@ -378,7 +383,7 @@ struct Attachment {
     inline static constexpr uintptr_t Position = 0xAC;
 };
 
-struct Weld {
+struct JointInstance {
     inline static constexpr uintptr_t Part0 = 0x100;
     inline static constexpr uintptr_t Part1 = 0x110;
 };
@@ -398,19 +403,19 @@ struct PlayerMouse {
 };
 
 struct GuiObject {
-    inline static constexpr uintptr_t ScreenGui_Enabled = 0x490;
-    inline static constexpr uintptr_t Position = 0x4D8;
-    inline static constexpr uintptr_t Size = 0x4F8;
-    inline static constexpr uintptr_t Visible = 0x575;
-    inline static constexpr uintptr_t Image = 0x9A8;
-    inline static constexpr uintptr_t Text = 0xE08;
-    inline static constexpr uintptr_t RichText = 0xBA0;
-    inline static constexpr uintptr_t BackgroundColor3 = 0x508;
-    inline static constexpr uintptr_t BorderColor3 = 0x514;
-    inline static constexpr uintptr_t TextColor3 = 0xEB8;
-    inline static constexpr uintptr_t LayoutOrder = 0x544;
-    inline static constexpr uintptr_t ZIndex = 0x56C;
-    inline static constexpr uintptr_t BackgroundTransparency = 0x514;
+    inline static constexpr uintptr_t ScreenGui_Enabled = 0x40D;
+    inline static constexpr uintptr_t Position = 0x2A8;
+    inline static constexpr uintptr_t Size = 0x2C8;
+    inline static constexpr uintptr_t Visible = 0x730;
+    inline static constexpr uintptr_t Image = 0x670;
+    inline static constexpr uintptr_t Text = 0xA30;
+    inline static constexpr uintptr_t RichText = 0x7C8;
+    inline static constexpr uintptr_t BackgroundColor3 = 0x2D8;
+    inline static constexpr uintptr_t BorderColor3 = 0x2E4;
+    inline static constexpr uintptr_t TextColor3 = 0xAE0;
+    inline static constexpr uintptr_t LayoutOrder = 0x314;
+    inline static constexpr uintptr_t ZIndex = 0x33C;
+    inline static constexpr uintptr_t BackgroundTransparency = 0x2E4;
     inline static constexpr uintptr_t Rotation = 0xD0;
 };
 
@@ -444,19 +449,19 @@ struct Lighting {
     inline static constexpr uintptr_t FogColor = 0xDC;
     inline static constexpr uintptr_t Ambient = 0xB8;
     inline static constexpr uintptr_t OutdoorAmbient = 0xE8;
-    inline static constexpr uintptr_t ColorShift_Top = 0xC4;
-    inline static constexpr uintptr_t ColorShift_Bottom = 0xD0;
+    inline static constexpr uintptr_t ColorShift_Bottom = 0xC4;
+    inline static constexpr uintptr_t ColorShift_Top = 0xD0;
     inline static constexpr uintptr_t ExposureCompensation = 0x10C;
     inline static constexpr uintptr_t GeographicLatitude = 0x11C;
-    inline static constexpr uintptr_t LightColor = 0x144;
-    inline static constexpr uintptr_t GradientTop = 0x138;
-    inline static constexpr uintptr_t LightDirection = 0x150;
-    inline static constexpr uintptr_t GradientBottom = 0x178;
-    inline static constexpr uintptr_t GlobalShadows = 0x12C;
-    inline static constexpr uintptr_t MoonPosition = 0x16C;
-    inline static constexpr uintptr_t SunPosition = 0x160;
-    inline static constexpr uintptr_t Source = 0x15C;
-    inline static constexpr uintptr_t Sky = 0x1B0;
+    inline static constexpr uintptr_t LightColor = 0x14C;
+    inline static constexpr uintptr_t GradientTop = 0x140;
+    inline static constexpr uintptr_t LightDirection = 0x158;
+    inline static constexpr uintptr_t GradientBottom = 0x180;
+    inline static constexpr uintptr_t GlobalShadows = 0x132;
+    inline static constexpr uintptr_t MoonPosition = 0x174;
+    inline static constexpr uintptr_t SunPosition = 0x168;
+    inline static constexpr uintptr_t Source = 0x164;
+    inline static constexpr uintptr_t Sky = 0x1B8;
 };
 
 struct Sky {
@@ -478,4 +483,136 @@ struct Atmosphere {
     inline static constexpr uintptr_t Density = 0xB8;
     inline static constexpr uintptr_t Offset = 0xC4;
     inline static constexpr uintptr_t Color = 0xA0;
-    inline static constexpr uintptr_t Decay = 0
+    inline static constexpr uintptr_t Decay = 0xAC;
+    inline static constexpr uintptr_t Glare = 0xBC;
+    inline static constexpr uintptr_t Haze = 0xC0;
+};
+
+struct BloomEffect {
+    inline static constexpr uintptr_t Intensity = 0xA0;
+    inline static constexpr uintptr_t Size = 0xA4;
+    inline static constexpr uintptr_t Threshold = 0xA8;
+    inline static constexpr uintptr_t Enabled = 0x98;
+};
+
+struct DepthOfFieldEffect {
+    inline static constexpr uintptr_t FocusDistance = 0xA4;
+    inline static constexpr uintptr_t FarIntensity = 0xA0;
+    inline static constexpr uintptr_t NearIntensity = 0xAC;
+    inline static constexpr uintptr_t InFocusRadius = 0xA8;
+    inline static constexpr uintptr_t Enabled = 0x98;
+};
+
+struct SunRaysEffect {
+    inline static constexpr uintptr_t Intensity = 0xA0;
+    inline static constexpr uintptr_t Spread = 0xA4;
+    inline static constexpr uintptr_t Enabled = 0x98;
+};
+
+struct ColorCorrectionEffect {
+    inline static constexpr uintptr_t Brightness = 0xDC;
+    inline static constexpr uintptr_t Contrast = 0xE4;
+    inline static constexpr uintptr_t TintColor = 0xD0;
+    inline static constexpr uintptr_t Enabled = 0x98;
+};
+
+struct ColorGradingEffect {
+    inline static constexpr uintptr_t TonemapperPreset = 0xA0;
+    inline static constexpr uintptr_t Enabled = 0x98;
+};
+
+struct BlurEffect {
+    inline static constexpr uintptr_t Size = 0xA0;
+    inline static constexpr uintptr_t Enabled = 0x98;
+};
+
+struct ProximityPrompt {
+    inline static constexpr uintptr_t ActionText = 0x98;
+    inline static constexpr uintptr_t ObjectText = 0xB8;
+    inline static constexpr uintptr_t HoldDuration = 0x108;
+    inline static constexpr uintptr_t MaxActivationDistance = 0x110;
+    inline static constexpr uintptr_t KeyCode = 0x10C;
+    inline static constexpr uintptr_t GamepadKeyCode = 0x104;
+    inline static constexpr uintptr_t Enabled = 0x11E;
+    inline static constexpr uintptr_t RequiresLineOfSight = 0x11F;
+};
+
+struct ClickDetector {
+    inline static constexpr uintptr_t MaxActivationDistance = 0xD0;
+    inline static constexpr uintptr_t MouseIcon = 0xB0;
+};
+
+struct DragDetector {
+    inline static constexpr uintptr_t ReferenceInstance = 0x1B8;
+    inline static constexpr uintptr_t MaxActivationDistance = 0xD0;
+    inline static constexpr uintptr_t MaxDragAngle = 0x270;
+    inline static constexpr uintptr_t MaxDragTranslation = 0x234;
+    inline static constexpr uintptr_t MinDragAngle = 0x27C;
+    inline static constexpr uintptr_t MinDragTranslation = 0x240;
+    inline static constexpr uintptr_t ActivatedCursorIcon = 0x188;
+    inline static constexpr uintptr_t CursorIcon = 0xB0;
+    inline static constexpr uintptr_t MaxForce = 0x274;
+    inline static constexpr uintptr_t MaxTorque = 0x278;
+    inline static constexpr uintptr_t Responsiveness = 0x288;
+};
+
+struct AnimationTrack {
+    inline static constexpr uintptr_t Animation = 0xA0;
+    inline static constexpr uintptr_t Animator = 0xF8;
+    inline static constexpr uintptr_t Speed = 0xBC;
+    inline static constexpr uintptr_t TimePosition = 0xC0;
+    inline static constexpr uintptr_t Looped = 0xCD;
+    inline static constexpr uintptr_t IsPlaying = 0xA40;
+};
+
+struct Animator {
+    inline static constexpr uintptr_t ActiveAnimations = 0x920;
+};
+
+struct LocalScript {
+    inline static constexpr uintptr_t GUID = 0xB8;
+    inline static constexpr uintptr_t Hash = 0x188;
+    inline static constexpr uintptr_t ByteCode = 0x0;
+};
+
+struct ByteCode {
+    inline static constexpr uintptr_t Size = 0x28;
+    inline static constexpr uintptr_t Pointer = 0x18;
+};
+
+struct Script {
+    inline static constexpr uintptr_t GUID = 0xB8;
+    inline static constexpr uintptr_t Hash = 0x188;
+    inline static constexpr uintptr_t ByteCode = 0x0;
+};
+
+struct MeshContentProvider {
+    inline static constexpr uintptr_t LRUHolder = 0xC0;
+};
+
+struct LRUHolder {
+    inline static constexpr uintptr_t MemEnforcedLRUCache = 0x20;
+};
+
+struct MemEnforcedLRUCache {
+    inline static constexpr uintptr_t Head = 0x8;
+};
+
+struct LRUNode {
+    inline static constexpr uintptr_t Next = 0x0;
+    inline static constexpr uintptr_t AssetID = 0x10;
+    inline static constexpr uintptr_t CachedItem = 0x38;
+};
+
+struct CachedItem {
+    inline static constexpr uintptr_t FileMeshData = 0x28;
+};
+
+struct FileMeshData {
+    inline static constexpr uintptr_t AABBMin = 0x180;
+    inline static constexpr uintptr_t AABBMax = 0x18C;
+    inline static constexpr uintptr_t Vertices = 0x0;
+    inline static constexpr uintptr_t VerticesEnd = 0x8;
+    inline static constexpr uintptr_t Faces = 0x30;
+    inline static constexpr uintptr_t FacesEnd = 0x38;
+};
